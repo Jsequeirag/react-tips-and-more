@@ -1,0 +1,12 @@
+#tsparticles {
+  position: absolute;
+  /* filter: blur(25px) !important;*/
+  width: 100%;
+  height: 100%;
+}
+canvas {
+  height: 100% !important;
+  width: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+}

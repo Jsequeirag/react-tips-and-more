@@ -1,0 +1,11 @@
+.Home {
+  background-color: black !important;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: 0 !important;
+  padding: 0 !important;
+}
