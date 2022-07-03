@@ -1,0 +1,157 @@
+.navbar {
+  margin: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 50;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.logo {
+  margin-left: 0;
+  padding-left: 4rem;
+}
+.initials p {
+  margin: 0 auto;
+  justify-content: center;
+  font-size: 27px;
+  color: black;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 550;
+}
+.logo,
+.navbar {
+  color: black;
+}
+
+.navbar-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin-right: 0;
+  padding-right: 4rem;
+}
+
+.logo-title h2 {
+  font-size: 22px;
+  font-weight: 500;
+  color: rgb(2, 85, 2);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.navbar-menu-items {
+  font-size: 20px;
+  font-weight: 300px;
+  color: black;
+  margin-left: 2rem;
+}
+
+a {
+  text-decoration: none;
+  padding-bottom: 5px;
+  font-weight: 400;
+  color: black;
+}
+a::after {
+  content: "";
+  width: 0;
+  height: 1.5px;
+  background: rgb(0, 77, 0);
+  display: block;
+  margin: 5px auto;
+  transition: 0.5s;
+}
+a:hover {
+  color: rgb(2, 85, 2);
+}
+a:hover::after {
+  color: 70%;
+}
+a.active {
+  font-weight: 400;
+}
+
+@media screen and(max-width:550px) {
+  .logo {
+    padding-left: 2rem;
+  }
+  .nav-menu {
+    padding-right: 2rem;
+  }
+  .logo-title h2 {
+    font-size: 18px;
+  }
+  .logo-name p {
+    font-size: 12px;
+  }
+  .navbar_menu_items p {
+    font-size: 15px;
+  }
+}
+@media screen and(max-width:428px) {
+  .logo {
+    padding-left: 2rem;
+  }
+  .nav-menu {
+    padding-right: 2rem;
+  }
+  .logo-title h2 {
+    font-size: 18px;
+  }
+  .logo-name p {
+    font-size: 12px;
+  }
+  .navbar_menu_items p {
+    font-size: 15px;
+  }
+}
+@media screen and(max-width:550px) {
+  .logo {
+    padding-left: 2rem;
+  }
+  .nav-menu {
+    padding-right: 2rem;
+  }
+  .logo-title h2 {
+    font-size: 15px;
+  }
+  .logo-name p {
+    font-size: 12px;
+  }
+  .navbar_menu_items p {
+    font-size: 15px;
+  }
+}
+@media screen and(max-width:360px) {
+  .navbar {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .logo {
+    padding-left: 0;
+    padding-bottom: 0.5rem;
+  }
+  .nav-menu {
+    padding-right: 0rem;
+  }
+  .navbar_menu_items {
+    margin: auto 1rem;
+  }
+  .navbar_menu_items p {
+    margin-bottom: 0;
+    font-size: 15px;
+  }
+  .logo-title h2 {
+    font-size: 18px;
+  }
+  .logo-name p {
+    font-size: 14px;
+  }
+}

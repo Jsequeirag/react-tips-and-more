@@ -1,0 +1,32 @@
+.sushi-img {
+  position: relative;
+}
+.left,
+.right,
+.bottom,
+.top {
+  display: inline-block;
+}
+.right {
+  width: 17rem;
+  margin-top: 18rem;
+  margin-right: 0rem;
+  z-index: 10px;
+}
+.left {
+  margin-top: 18rem;
+  margin-left: 5rem;
+}
+
+.top {
+  margin-top: 10rem;
+  margin-left: 0rem;
+}
+.bottom {
+  width: 10rem;
+  margin-top: 27rem;
+}
+.left,
+.top {
+  width: 8rem;
+}
