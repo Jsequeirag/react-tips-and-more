@@ -1,0 +1,25 @@
+.app {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.chart_container {
+    border: 1px rgb(165, 165, 165) solid;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 10px;
+    width: 100%;
+    max-width: 400px;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
