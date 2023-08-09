@@ -1,0 +1,17 @@
+.form-container{
+    height: 100vh;
+    min-width: 100vh;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.task-form{
+min-width: 40%;
+text-align: center;
+}
+.task-form input{
+    margin: 10px;
+    width: 100%;
+}
