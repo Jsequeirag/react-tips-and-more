@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script src="https://static.greenpay.me/collector/1.0.1/GDataCollector.min.js"></script>
+    <script type="text/javascript">
+      var collector = null;
+      var result;
+      GDataCollector.init("sand", null, function (result) {
+        collector = result;
+        collector.setupCallback({
+          // fires when collection has finished
+          "collect-end": function (params) {
+            console.log("collection has ended");
+            console.log("SessionId", params.MercSessId);
+            result = params.MercSessId;
+          },
+          // fires when collection has started.
+          "collect-begin": function () {
+            //console.log('collection has started');
+          },
+        });
+        collector.collectData();
+      });
+    </script>
+  </body>
+</html>
